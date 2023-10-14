@@ -10,13 +10,22 @@
 </head>
 <body>
 <main class="main">
+
+    <audio id="myAudio">
+        <source src="src/Lumina Solis.mp3" type="audio/mpeg">
+      </audio>
+
     <div class="tape">
         <div class="tapesticker">
             <audio id="player" src=""></audio>
+
             <!--play e pause-->
-            <div class="controls">
-                <button id="playPauseButton"><i class='bx bx-caret-right'></i></button>
-                </div>
+                <button id="playPauseButton" onclick="togglePlayPause()">
+                    <svg width="24" height="20" viewBox="0 0 24 24">
+                        <path id="playIcon" d="M8 5v14l11-7z"></path>
+                      </svg>
+                </button>
+               
 
             <div id="letterleft">A</div>
             <div id="letterright">B</div>
@@ -42,7 +51,7 @@
                 </div>
                 </div>
 
-                <span class="track"><br> <br>ARTISTA <br> MUSICA</span>
+                <span class="track"><br> <br>ARTISTA: LUMINA SOLIS © <br> MUSICA: <br> Печь горяча, а за окном метель метёт</span>
         </div>
         
         <div class="footerwrapper">
@@ -56,7 +65,12 @@
         </div>
     </div>
     </div>
-    <script type="module" src="javascript/script.js"></script>
-</main>
+
+    <!--footer-->
+    <footer class="footer">
+        <p>© 2023 BY: NATHAN MACIEL <br> MADE WITH ❤️</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
 </body>
 </html>

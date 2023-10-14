@@ -226,7 +226,7 @@ body
 {
   display: block;
   color: #FFFDFD;
-  font-size: 10px;
+  font-size: 8.5px;
   line-height: 1em;
   font-weight: bold;
   text-transform: uppercase;
@@ -234,35 +234,15 @@ body
   
 }
 
-.controls button
-{
-  border: none;
-  background: none;
-  cursor: pointer;
 
-}
-
-.controls i
+#playPauseButton
 {
-  font-size: 35px;
-  padding: 1.5px;
-  border-radius: 70%;
-  background-color: #080C15;
-  color: crimson;
+  padding: 1px;
   transition: all .2s;
   position: absolute;
-  border-radius: 14px;
   top: 228px;
   left: 290px;
 }
-
-.controls i:hover
-{
-  background-color: crimson;
-  color: white;
-}
-
-
 
 #letterleft, #letterright
 {
@@ -293,4 +273,16 @@ body
 {
   top: 152px; 
   right: 57px;
+}
+
+.footer p
+{
+  margin: 15px;
+  font-size: 11px;
+  padding: 22px;
+  display: block;
+  font-family: "Yantramanav", sans-serif;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }

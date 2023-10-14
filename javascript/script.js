@@ -1,19 +1,15 @@
-const player = document.querySelector("#player");
-const playPauseButton = document.querySelector("#playPauseButton");
+var audio = document.getElementById("myAudio");
+  var playButton = document.getElementById("playPauseButton");
+  var playIcon = document.getElementById("playIcon");
+  var isPlaying = false;
 
-import songs from "./song.js";
-
-const textButtonPlay = "<i class='bx bx-caret-right'></i>";
-const textButtonPause = "<i class='bx bx-pause'></i>";
-let index = 0;
-playPauseButton.onclick = () => playPause();
-
-const playPause = () => {
-  if (player.paused) {
-    player.play();
-    playPauseButton.innerHTML = textButtonPause;
-  } else {
-    player.pause();
-    playPauseButton.innerHTML = textButtonPlay;
+  function togglePlayPause() {
+    if (isPlaying) {
+      audio.pause();
+      playIcon.setAttribute("d", "M8 5v14l11-7z");
+    } else {
+      audio.play();
+      playIcon.setAttribute("d", "M6 6h4v12H6zm8 0h4v12h-4z");
+    }
+    isPlaying = !isPlaying;
   }
-};
